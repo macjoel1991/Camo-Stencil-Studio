@@ -14,11 +14,11 @@ from shapely.geometry import Polygon, MultiPolygon, LineString
 from shapely.ops import unary_union, nearest_points
 
 # --- DEFAULTS ---
-DEFAULT_MAX_COLORS = 4
-DEFAULT_MAX_WIDTH = 1000
-DEFAULT_SMOOTHING = 0.0005 
-DEFAULT_DENOISE = 5
-DEFAULT_MIN_BLOB = 50
+DEFAULT_MAX_COLORS = 3
+DEFAULT_MAX_WIDTH = 4096
+DEFAULT_SMOOTHING = 0.0001 
+DEFAULT_DENOISE = 3
+DEFAULT_MIN_BLOB = 100
 DEFAULT_TEMPLATE = "%INPUTFILENAME%-%COLOR%-%INDEX%"
 
 def bgr_to_hex(bgr):
